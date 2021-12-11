@@ -1,0 +1,44 @@
+.about {
+  padding: 100px 0 63px;
+
+  &__subtitle {
+    color: #828282;
+    font-size: 25px;
+    line-height: 1.4;
+    font-style: italic;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    padding-right: 133px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image:url('../images/header/line.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #08AE8D;
+      top: 15px;
+      right: -15px;
+      width: 113px;
+      height: 1px;
+    }
+  }
+
+  &__text {
+    max-width: 886px;
+  }
+
+  &__text p:nth-child(1) {
+    color: #343434;
+    font-size: 28px;
+    @extend %poppins-400;
+    margin-bottom: 25px;
+  }
+
+  &__text p:nth-child(2) {
+    color: #828282;
+    @extend %poppins-400;
+    max-width: 805px;
+  }
+}
