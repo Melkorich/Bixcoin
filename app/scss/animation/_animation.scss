@@ -1,0 +1,14 @@
+.link {
+  transition: color 0.3s;
+  &:focus {
+    color: #08AE8D;
+  }
+
+  &:hover {
+    color: #08AE8D;
+  }
+
+  &:active {
+    color: #08AE8D;
+  }
+}
