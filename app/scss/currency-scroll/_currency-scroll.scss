@@ -1,0 +1,72 @@
+.currency-scroll {
+  background-color: #0d0c1e;
+  overflow: hidden;
+  
+
+  &__inner {
+    width: 200%;
+    display: flex;
+    animation: scroll 10s infinite linear;
+    padding: 10px 0;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  &__item {
+    padding-left: 45px;
+    margin-right: 30px;
+    position: relative;
+    font-size: 18px;
+    min-width: 230px;
+    @extend %poppins-400;
+
+    &::before {
+      position: absolute;
+      content:'';
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      top: -4px;
+      left: 0;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__item:nth-child(1)::before {
+    background-image:url('../images/currency-scroll/1.png');
+  }
+  
+  &__item:nth-child(2)::before {
+    background-image:url('../images/currency-scroll/2.png');
+  }
+
+  &__item:nth-child(3)::before {
+    background-image:url('../images/currency-scroll/3.png');
+  }
+
+  &__item:nth-child(4)::before {
+    background-image:url('../images/currency-scroll/4.png');
+  }
+
+  &__item:nth-child(5)::before {
+    background-image:url('../images/currency-scroll/1.png');
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+    transfrom: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+

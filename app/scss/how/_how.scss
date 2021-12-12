@@ -1,0 +1,108 @@
+.how {
+  background-color: #fff;
+  padding: 90px 0;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 35px;
+    line-height: 1.5;
+    @extend %poppins-400;
+    color: #343434;
+    margin-bottom: 15px;
+  } 
+
+  &__subtitle {
+    font-size: 22px;
+    font-style: italic;
+    color: #828282;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../images/market/line.svg');
+      background-repeat: no-repeat;
+      background-size: concover;
+      width: 120px;
+      height: 1px;
+      left: 50%;
+      bottom: -15px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__items-box {
+    padding-top: 135px;
+  }
+
+  &__items {
+    display: flex;
+    margin: 0 -57.5px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 0 1 33.333%;
+    display: flex; 
+    padding: 15px 57.5px;
+  }
+
+  &__item:nth-child(2) {
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+    &::before {
+      top: -10px;
+      left: -100px;
+      width: 233px;
+      height: 48px;
+      background-image:url('../images/how/arrow-1.svg');
+    }
+
+    &::after {
+      top: 80px;
+      right: -130px;
+      width: 232px;
+      height: 48px;
+      background-image:url('../images/how/arrow-2.svg');
+    }
+  }
+
+  &__item-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #343434;
+  }
+
+  &__item-image {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 25px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__item-title {
+    font-size: 23px;
+    margin-bottom: 10px;
+    @extend %poppins-400;
+  }
+
+  &__item-text {
+    font-size: 18px;
+  }
+}

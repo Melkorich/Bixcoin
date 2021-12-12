@@ -41,4 +41,38 @@
     @extend %poppins-400;
     max-width: 805px;
   }
+
+  &__items {
+    padding: 63px 0 90px;
+  } 
+
+  &__list {
+    display: flex;
+  } 
+}
+
+.about__item {
+  flex: 0 1 33.333%;
+  padding-left: 30px;
+  margin-right: 15px;
+  border-left:1px solid #08AE8D;
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    @extend %poppins-400;
+  }
+ 
+  &-title {
+    display: block;
+    font-size: 23px;
+    color: #343434;
+    margin-bottom: 10px;
+  }
+
+  &-text {
+    font-size: 18px;
+    color: #828282;
+    max-width: 300px;
+  }
 }
