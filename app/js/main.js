@@ -1,12 +1,17 @@
 $(function(){
 
-  $(' .menu__btn').on('click', function() {
-    $('.search-txt').toggleClass('search-text--active');
+  $('.menu-search__btn').on('click', function() {
+    $('.menu-search').toggleClass('menu-search--active');
   });
 
-  $('.menu__link, .header__navigation-lin').on('click', function() {
-    $('.search-txt').removeClass('search-text--active');
+  $('.menu__btn').on('click', function() {
+    $('.menu__txt').toggleClass('menu__txt--active');
   });
+
+  // $('.header').on('click', function() {
+  //   $('.menu__txt').removeClass('menu__txt--active');
+  // });
+
 
  
 });

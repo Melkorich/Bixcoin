@@ -1,0 +1,159 @@
+.team {
+  padding: 90px 0 65px;
+
+  &__inner {
+    text-align: center;   
+  }
+
+  &__title {
+    font-size: 35px;
+    line-height: 1.5;
+    color: #343434;
+    @extend %poppins-400;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../images/market/line.svg');
+      background-repeat: no-repeat;
+      background-size: concover;
+      width: 120px;
+      height: 1px;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__text {
+    font-style: italic;
+    font-size: 22px;
+    color: #828282;
+    max-width: 982px;
+    margin: 0 auto 60px;
+  }
+
+  &__items {
+    display: flex;
+    margin: 0 -22.5px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 0 0 25%;
+    padding: 0 22.5px;
+    display: flex;
+  } 
+
+  &__card {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    &:hover .team__links{
+      opacity: 1;
+      z-index: 1;
+    }
+
+    &:hover .team__image::before {
+      opacity: 0.6;
+      z-index: 0;
+      transition: opacity 0.4s;
+    }
+
+    &::before {
+      position: absolute;
+      content:'';
+      background-image:url('../images/prices/line.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 60px;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 329px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content:'';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: linear-gradient(151.65deg, rgba(8, 174, 141, 0.65), rgba(31, 74, 191, 0.65));
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    @extend %poppins-400;
+    color: #343434;
+    font-size: 23px;
+  }
+
+  &__position {
+    font-style: italic;
+    font-size: 18px;
+    color: #828282;
+  }
+
+  &__links {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image:url('../images/team/circle.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 54px;
+      height: 54px;
+      top: -10px;
+      left: 1px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  .team__icon{
+    position: relative;
+    z-index: 9;
+    fill:#EFEFEF;
+    transition: fill 0.4s;
+
+    &:hover {
+      fill:#08AE8D;
+    }
+  }
+}

@@ -37,7 +37,7 @@
     color: #EFEFEF;
     @extend %poppins-400;
     margin-bottom: 40px;
-  }
+  } 
 
   &__subtitle {
     display: inline-block;
@@ -109,10 +109,24 @@
   background-color:#0D0C1F;
   display: flex;
   flex-direction: column;
-  transition: background-color 0.3s;
+  position: relative;
+  transition: all 0.8s;
 
-  &:hover {
-    background-color:rgba(#145245, 0.3);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;      
+    left: 0;  
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  &:hover::before {
+    width: 100%;
+    height: 100%;    
+    background: transparent;
+    background-image: linear-gradient(to left bottom, rgba(8, 174, 141, 0.9), rgba(31, 74, 191, 0.9));
+    opacity: 0.3;
   }
 
   &__top {

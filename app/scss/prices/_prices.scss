@@ -1,0 +1,169 @@
+.prices {
+  padding: 90px 0; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__top {
+    display: flex;
+    margin-bottom: 90px;
+  }
+  
+  &__content {
+    max-width: 800px;
+    width: 100%;
+    margin-right: 75px;
+  }
+
+  &__text {
+    width: 100%;
+    font-size: 28px;
+    margin-bottom: 30px;
+    @extend %poppins-400;
+  }
+
+  &__subtitle {
+    font-style: italic;
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+    padding-right: 75px;
+    margin-bottom: 50px;
+
+    &::after {
+      position: absolute;
+      content:'';
+      background-image:url('../images/prices/line.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 60px;
+      height: 1px;
+      top: 15px;
+      right: 0;
+    }
+  }
+
+  &__numbers {
+    display: flex;
+  }
+
+  &__number {
+    @extend %poppins-400;
+  }
+
+  &__number:first-child {
+    margin-right: 100px;
+    padding-right: 50px;
+  }
+
+  &__number-sum {
+    font-size: 85px;
+    display: inline-block;
+    position: relative;
+    line-height: 1.2;
+
+    &::after {
+      position: absolute;
+      content:'';
+      background-image:url('../images/prices/plus.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      right: -45;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__number-name {
+    display: block;
+    font-size: 25px;
+  }
+
+  &__data {
+    min-width: 325px;
+  }
+  &__data-wrapper {
+    padding: 50px 45px 30px 45px;
+    background-color:#EFEFEF;
+    box-shadow: 0 0 10px #000;
+    color: #343434;
+  }
+
+  &__item {
+    max-width: 150px;
+    margin-bottom: 20px;
+  } 
+
+  &__item-number {
+    @extend %poppins-400;
+    font-size: 30px;
+  }
+
+  &__item-name {
+    font-style: italic;
+    font-size: 22px;
+  }
+
+  &__title {
+    text-align: center;
+    @extend %poppins-400;
+    font-size: 35px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../images/market/line.svg');
+      background-repeat: no-repeat;
+      background-size: concover;
+      width: 120px;
+      height: 1px;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  }
+} 
+
+.table {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #828282;
+  border-collapse: collapse;
+  @extend %poppins-400;
+
+
+  &__heading {
+    background-color:#08AE8D;
+    font-size: 25px;
+    line-height: 1.5;
+    
+    td {
+      border-left: none !important;
+      border-right: none !important;
+    }
+  }
+
+  &__row {
+    font-size: 23px;
+    color: #fff;
+  }
+
+  &__row:nth-child(odd) {
+    background-color: transparent;
+  }
+
+  &__row:nth-child(even) {
+    background-color: #C4C4C4;
+  }
+
+  tr td {
+    border: 1px solid #828282;
+    padding: 9px;
+  }
+}
+
