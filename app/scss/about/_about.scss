@@ -27,19 +27,19 @@
 
   &__text {
     max-width: 886px;
+    @extend %poppins-400;
   }
 
   &__text p:nth-child(1) {
     color: #343434;
     font-size: 28px;
-    @extend %poppins-400;
     margin-bottom: 25px;
   }
 
   &__text p:nth-child(2) {
     color: #828282;
-    @extend %poppins-400;
     max-width: 805px;
+    font-size: 20px;
   }
 
   &__items {
