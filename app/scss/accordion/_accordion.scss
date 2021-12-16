@@ -54,7 +54,7 @@
     color: #C4C4C4;
     max-width: 925px;
     position: relative;
-    padding: 0 60px;
+    padding: 0 25px;
     opacity: 0;
     overflow: hidden;
     transition: all 0.5s linear;
@@ -65,7 +65,7 @@
 }
 
 .active .accordion__content {
-  padding: 25px 60px 50px;
+  padding: 25px 25px 50px;
   opacity: 1;
   max-height: 140px;
 }

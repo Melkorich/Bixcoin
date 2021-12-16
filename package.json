@@ -21,6 +21,7 @@
     "jquery": "^3.6.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "lity": "^2.4.1",
     "modaal": "^0.4.4"
   }

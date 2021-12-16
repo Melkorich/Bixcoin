@@ -100,3 +100,16 @@ accordion.forEach(el => {
     }
   });
 });
+
+AOS.init({
+  disable: 'mobile',
+  disable: 'phone', 
+  offset: 100, 
+  easing: 'ease', 
+  once: true, 
+  anchorPlacement: 'top-bottom'
+});
+
+
+
+
