@@ -100,6 +100,7 @@
     font-size: 23px;
     margin-bottom: 10px;
     @extend %poppins-400;
+    flex: 1 1 auto;
   }
 
   &__item-text {
