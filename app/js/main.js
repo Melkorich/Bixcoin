@@ -97,7 +97,7 @@ accordion.forEach(el => {
     }
     else {
       content.style.maxHeight = null;
-    }
+    } 
   });
 });
 

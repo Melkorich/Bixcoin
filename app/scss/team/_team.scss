@@ -48,13 +48,31 @@
     display: flex;
   } 
 
+  &__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+
+    &::before {
+      position: absolute;
+      content:'';
+      background-image:url('../images/prices/line.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 60px;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    } 
+  }
+
   &__card {
     width: 255px;
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
 
     &:hover .team__links{
       opacity: 1;
@@ -69,19 +87,6 @@
       opacity: 0.6;
       z-index: 0;
       transition: opacity 0.4s;
-    }
-
-    &::before {
-      position: absolute;
-      content:'';
-      background-image:url('../images/prices/line.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 60px;
-      height: 1px;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
     }
   }
 
