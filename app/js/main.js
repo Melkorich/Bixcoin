@@ -17,7 +17,7 @@ $(function(){
     $('.menu__list').removeClass('menu__list--active');
     $('.logo').removeClass('menu__list--active');
     $('.menu__burger').removeClass('menu__burger--active');
-  });
+  }); 
 
   //варианты аккардиона на jquery
 
