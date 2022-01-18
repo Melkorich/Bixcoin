@@ -2,14 +2,14 @@
   padding: 100px 0 63px;
 
   &__subtitle {
-    color: #828282;
-    font-size: 25px;
-    line-height: 1.4;
-    font-style: italic;
     margin-bottom: 25px;
     position: relative;
-    display: inline-block;
     padding-right: 133px;
+    font-size: 25px;
+    line-height: 1.4;
+    display: inline-block;
+    color: #828282;
+    font-style: italic;
 
     &::after {
       position: absolute;

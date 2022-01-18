@@ -123,14 +123,10 @@
     padding-top: 30px;
     text-align: center;
   }
-
-
 }
 
 .partners {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexb();
   flex-wrap: wrap;
   margin: 0 -20px 90px;
 
@@ -154,10 +150,8 @@
   &__image {
     min-width: 117px;
     height: 104px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-right: 35px;
+    @include flexc();
 
     img {
       width: 100%;
@@ -200,9 +194,7 @@
 
   &__link {
     padding: 15px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexc();
     text-align: center;
     min-width: 284px;
     background-color:#08AE8D;

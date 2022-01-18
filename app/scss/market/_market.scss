@@ -2,15 +2,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+ 
   &__inner {
     padding: 90px 0;
   }
 
   &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexb();
     margin-bottom: 90px;
   }
 
@@ -136,9 +134,7 @@
   }
 
   &__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexb();
     margin-bottom: 6px;
   }
 

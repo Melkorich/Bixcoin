@@ -23,6 +23,10 @@ body {
   line-height: 1.5;  
   color: #EFEFEF;   
   background-color:#EFEFEF;
+
+  &.scroll-block {
+    overflow: hidden;
+  }
 }
 
 .wrapper {

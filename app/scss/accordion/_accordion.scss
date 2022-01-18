@@ -3,11 +3,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
 .accordion{
-
   &__item {
     background-color:#0D0C1F;
     margin-bottom: 25px;
@@ -34,9 +32,7 @@
   }
 
   &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexc();
     width: 40px;
     height: 40px;
     border: none;
@@ -77,31 +73,6 @@
 .active .accordion__control .arrow-down {
   stroke:#08AE8D;
 }
-
-// .accordion__item.active .accordion__content {
-//   padding: 25px 60px 50px;
-//   height: 140px;
-// }
-
-// .accordion__item.active .accordion__heading {
-//   border: 1px solid #08AE8D;
-// }
-
-// .accordion__item.active .accordion__heading .arrow-down {
-//   stroke:#08AE8D;
-// }
-
-// .accordion__item--active .accordion__control {
-//   border: 1px solid #08AE8D;
-// }
-
-// .accordion__item--active .accordion__control .arrow-down{
-//   stroke:#08AE8D;
-// }
-
-// .accordion__item--active .accordion__content {
-//   display: block;
-// }
 
 
 

@@ -11,71 +11,18 @@ $(function(){
   $('.menu__burger').on('click', function() {
     $('.menu__list').toggleClass('menu__list--active');
     $('.menu__burger').toggleClass('menu__burger--active');
+    $('body').toggleClass('scroll-block');
   })
 
   $('.menu__link').on('click', function() {
     $('.menu__list').removeClass('menu__list--active');
     $('.logo').removeClass('menu__list--active');
     $('.menu__burger').removeClass('menu__burger--active');
+    $('body').removeClass('scroll-block');
   }); 
-
-  //варианты аккардиона на jquery
-
-  //#1
-  // $('.accordion__heading').on('click', function() {
-  //   $(this).next('.accordion__content').slideToggle(200);
-  // })
-
-  //#2
-
-  // $('.accordion__control').on('click', function() {
-  //   $('.accordion__item').removeClass('accordion__item--active');
-  //   $(this).parent('.accordion__item').toggleClass('accordion__item--active');
-  // })
-
 
 });
 
- //варианты аккардиона на js
-  //#1
-
-// document.querySelectorAll('.accordion__heading').forEach((item) =>
-//   item.addEventListener('click', () => {
-//     const parent = item.parentNode;
-
-//     if (parent.classList.contains('accordion__item--active')) {
-//         parent.classList.remove('accordion__item--active');
-//     } else {
-//       document.querySelectorAll('.accordion__item').forEach((child) => child.classList.remove('accordion__item--active'));
-//     }
-
-//     parent.classList.toggle('accordion__item--active');
-//   })
-// )
-
- //#2
-
-// const accordions = document.querySelectorAll('.accordion__item');
-
-// for(item of accordions) {
-//   item.addEventListener('click', function() {
-//     this.classList.toggle('active');
-//   })
-// }
-
-// for(item of accordions) {
-//   item.addEventListener('click', function() {
-//     if(this.classList.contains('active')) {
-//       this.classList.remove('active');
-//     }
-//     else {
-//       for(el of accordions) {
-//         el.classList.remove('active');
-//       }
-//       this.classList.add('active');
-//     }
-//   })
-// }
 
 
 const accordion = document.querySelectorAll('.accordion__item');
